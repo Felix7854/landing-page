@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap');
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --purple-color: #666ca3;
+  --dark-blue-color: #13183f;
+  --gray-color: #83869a;
+  --tomato-red-color: #f74780;
+  --light-red-color: #ffa7c3;
+  --white-color: #ffff;
+
+  /* Font */
+  --primary-font: 'Plus Jakarta Sans Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+
+  /* Headers */
+  --header-size-xtra-large: 56px;
+  --header-size-large: 40px;
+  --header-size-medium: 32px;
+  --header-size-small: 24px;
+
+  /* Text */
+  --text-size-medium: 18px;
+  --text-size-small: 16px;
+}
+
+/* Main Button Class  */
+
+.idle-buttons {
+  width: 167px;
+  height: 56px;
+  border-radius: 28px !important;
+  color: var(--white-color) !important;
+  font-size: var(--text-size-medium) !important;
+  font-weight: normal !important;
+  border: none !important;
+}
+
+/* Various Variations Of Buttons */
+
+.btn-idle-1 {
+  background: var(--dark-blue-color) !important;
+}
+
+.btn-idle-1:hover {
+  background: var(--purple-color) !important;
+}
+
+.btn-idle-2 {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%) !important;
+}
+
+.btn-idle-2:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%) !important;
+}
+
+.btn-idle-3 {
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%) !important;
+}
+
+.btn-idle-3:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%) !important;
+}
+
+/* Header Section */
+
+header {
+  height: 900px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 270px;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  right: -425px;
+  top: -117px;
+  z-index: -1;
+  background-image: url(./assets/image-hero-desktop.webp);
+  background-repeat: no-repeat;
+}
+
+.img.top-image {
+  height: 636px;
+}
+
+.main-header-text {
+  font-family: var(--primary-font);
+  font-size: var(--header-size-xtra-large);
+  color: var(--dark-blue-color);
+  font-weight: 800;
+  line-height: 71px;
+}
+
+.sub-header-text {
+  font-family: var(--primary-font);
+  font-size: var(--text-size-medium);
+  color: var(--gray-color);
+  max-width: 445px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* Main Section */
+
+main {
+  margin-top: 100px;
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  padding-top: 24px;
+  padding-bottom: 140px;
+}
+
+.service-cards {
+  width: 350px;
+  height: 322px;
+  border-radius: 15px;
+  background-color: var(--white-color);
+  position: relative;
+  padding: 64px 32px 0px 32px;
+}
+
+.with-gradient {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.card-text {
+  font-family: var(--primary-font);
+  font-size: var(--header-size-medium);
+  color: var(--white-color);
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.service-icon-holder {
+  position: absolute;
+  top: -24px;
+  left: 32px;
+}
+
+.services-title {
+  font-family: var(--primary-font);
+  font-size: var(--header-size-small);
+  color: var(--dark-blue-color);
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.services-text {
+  font-family: var(--primary-font);
+  font-size: var(--text-size-medium);
+  color: var(--gray-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.get-started-link > a {
+  font-family: var(--primary-font);
+  font-size: var(--text-size-medium);
+  color: var(--tomato-red-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none !important;
+}
+
+/* Footer Section */
+
+footer {
+  width: 100%;
+  height: 120px;
+  background: var(--dark-blue-color);
+}
+
+/* Media Queries */
+
+/* Desktop Devices */
+@media only screen and (min-device-width: 771px) {
+
+  header::before {
+    content: '';
+    position: absolute;
+    right: -425px;
+    top: -117px;
+    width: 1194px;
+    height: 910px;
+    background-image: url(./assets/icons/image-hero-desktop.webp);
+  }
+}
+
+/* Tablet Devices */
+@media only screen and (max-device-width: 770px) {
+  .main-header-text {
+    font-size: var(--header-size-large);
+    line-height: 50px;
+  }
+
+  .sub-header-text {
+    font-family: var(--primary-font);
+    font-size: var(--text-size-small);
+    max-width: 320px;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    right: -799px;
+    top: -11px;
+    width: 1194px;
+    height: 910px;
+    background-image: url(./assets/icons/image-hero-tablet.webp);
+  }
+
+  header {
+    height: 680px;
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (max-device-width: 426px) {
+  header::before {
+    display: none;
+  }
+
+  header {
+    padding-top: 150px;
+    height: 850px;
+  }
+
+  .top-image-holder {
+    height: 450px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./assets/icons/image-hero-mobile.webp);
+  }
+}
