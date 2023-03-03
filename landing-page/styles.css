@@ -18,7 +18,7 @@
   /* Headers */
   --header-size-xtra-large: 56px;
   --header-size-large: 40px;
-  --header-size-medium: 32px;
+  --header-size-medium: 27px;
   --header-size-small: 24px;
 
   /* Text */
@@ -144,6 +144,10 @@ main {
   color: var(--white-color);
   font-weight: 800;
   line-height: 40px;
+}
+
+.card-text:last-child {
+  width: 300px;
 }
 
 .service-icon-holder {
